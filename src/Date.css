@@ -1,0 +1,114 @@
+/* DatePage.css */
+
+.DatePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  background-image: linear-gradient(to left, #434a54, #282c34); /* Gradient background */
+  background-size: 100% 100%;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.DatePage-header {
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.instructions {
+  width: 45%;
+  background-image: linear-gradient(to left, #2e333a, #282c34); /* Gradient background */
+  background-size: 100% 100%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.instructions h3 {
+  margin-top: 0;
+}
+
+.instructions ol {
+  padding-left: 20px;
+}
+
+.instructions ol li {
+  margin-bottom: 10px;
+}
+.date-time-inputs {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  background-image: url('https://www.whatsapp.com/img/favicon/1x/favicon.png'); /* Add WhatsApp background image */
+  background-size: 100% 100%; /* Scale the background image to fit the container */
+  background-image: linear-gradient(to right,  #2e333a, #282c34); /* Gradient background */
+  background-size: 100% 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.date-time-inputs label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%; /* Make the label take up the full width */
+}
+
+.date-time-inputs input[type="date"],
+.date-time-inputs input[type="time"] {
+  flex: 1; /* Make the input fields take up the remaining space */
+  margin-left: 8px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #50575e;
+  color: white;
+  width: 100%; /* Make the input fields take up the full width */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+.date-time-inputs .button {
+    
+    margin: 0 auto;
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: #10e842;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+  }
+  
+  .date-time-inputs .button:hover {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+  }
+  
+  .date-time-inputs .button:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+
+
+
+.error {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+}
